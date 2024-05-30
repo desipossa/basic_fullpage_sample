@@ -95,7 +95,7 @@
 .aside li a {
     position: relative;
     display: block;
-    width: 180px;
+    width: 80px;
     height: 40px;
     text-align: right;
     color: #ddd;
@@ -111,7 +111,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0;
     transform: translate(-50%, -50%);
 
     width: 12px;
@@ -126,7 +126,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0;
 
     transform: translate(-50%, -50%);
 
