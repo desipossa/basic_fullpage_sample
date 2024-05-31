@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/slick.min.js"></script>
+
+</head>
+
+<body>
+    <section class="tab default">
+        <div class="tit">
+            <h2>공차 탭메뉴스타일</h2>
+            <p><a href="https://www.gong-cha.co.kr/franchise/open/guide.php">공차 홈페이지에서 만들어놓은 텝메뉴 스타일</a></p>
+        </div>
+
+
+        <div class="inner">
+            <div class="tab_menu">
+                <ul>
+                    <li class="on"><button>개설안내</button></li>
+                    <li><button>개설 비용</button></li>
+                    <li><button>상담신청</button></li>
+                    <li><button>지역별 담당자</button></li>
+                    <li><button>인테리어</button></li>
+                    <li><button>가맹점 개설 FAQ</button></li>
+                </ul>
+            </div>
+            <div class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, doloribus!</div>
+
+        </div>
+    </section>
+
+
+    <style>
+        /* display table / button tag ver */
+        .tab {
+            padding: 120px 0;
+        }
+
+        .tab .tit {
+            margin: 0 auto 40px auto;
+        }
+
+        .tab .tit h2 {
+            margin: 0 0 16px 0;
+        }
+
+        .tab .tab_menu ul {
+            display: flex;
+            width: 100%;
+            height: 64px;
+            margin: 0 0 80px 0;
+            border-bottom: 1px solid tomato;
+        }
+
+        .tab .tab_menu ul li {
+            flex: 1 0 auto;
+        }
+
+
+
+        .tab .tab_menu ul li button {
+            border: 1px solid transparent;
+            border-top: 1px solid #e1e1e1;
+            border-right: 1px solid #e1e1e1;
+            width: 100%;
+            height: 64px;
+        }
+
+        .tab .tab_menu ul li:first-child button {
+            border-left: 1px solid #e1e1e1;
+        }
+
+        .tab .tab_menu ul li.on button {
+            border: 1px solid tomato;
+            border-bottom: 1px solid #fff;
+            white-space: nowrap;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('.tab .tab_menu ul li button').on('click', function () {
+                $(this).parent().addClass('on').siblings().removeClass('on')
+            })
+        })
+    </script>
+</body>
+
+</html>

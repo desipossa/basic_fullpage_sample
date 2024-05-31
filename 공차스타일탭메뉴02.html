@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/slick.min.js"></script>
+
+</head>
+
+<body>
+    <section class="tab default">
+        <div class="tit">
+            <h2>공차 탭메뉴스타일</h2>
+            <p><a href="https://www.gong-cha.co.kr/franchise/open/guide.php">공차 홈페이지에서 만들어놓은 텝메뉴 스타일</a></p>
+        </div>
+
+
+        <div class="inner">
+            <div class="tab_menu">
+                <ul>
+                    <li class="on"><a href="">개설안내</a></li>
+                    <li><a href="">개설 비용</a></li>
+                    <li><a href="">상담신청</a></li>
+                    <li><a href="">지역별 담당자</a></li>
+                    <li><a href="">인테리어</a></li>
+                    <li><a href="">가맹점 개설 FAQ</a></li>
+                </ul>
+            </div>
+            <div class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, doloribus!</div>
+
+        </div>
+    </section>
+
+
+    <style>
+        /* display table / a tag ver */
+        .tab {
+            padding: 120px 0;
+        }
+
+        .tab .tit {
+            margin: 0 auto 40px auto;
+        }
+
+        .tab .tit h2 {
+            margin: 0 0 16px 0;
+        }
+
+        .tab .tab_menu ul {
+            display: table;
+            width: 100%;
+            margin: 0 0 80px 0;
+        }
+
+        .tab .tab_menu ul li {
+            display: table-cell;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid tomato;
+            /* border-left: 1px solid #e1e1e1; */
+            border-right: 1px solid #e1e1e1;
+        }
+
+        .tab .tab_menu ul li:first-child {
+            border-left: 1px solid #e1e1e1;
+        }
+
+        .tab .tab_menu ul li a {
+            display: block;
+            line-height: 62px;
+            text-align: center;
+        }
+
+        .tab .tab_menu ul li.on a {
+            border: 1px solid tomato;
+
+            border-bottom: 1px solid #fff;
+            margin: -1px;
+            /* position: relative;
+            z-index: 999; */
+
+            white-space: nowrap;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('.tab .tab_menu ul li a').on('click', function (e) {
+                e.preventDefault(); // a 기능을 빼줌.
+                $(this).parent().addClass('on').siblings().removeClass('on')
+            })
+        })
+    </script>
+</body>
+
+</html>
